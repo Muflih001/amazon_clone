@@ -8,6 +8,15 @@ class Constants {
   static String travelTicket_Logo = 'assets/images/travel_ticket.jpg';
   static String spinGame_Logo = 'assets/images/spinGame.jpeg';
   static String Amazon_Logo = 'assets/images/Amazonlogo.png';
+  static String flag = 'assets/images/flag.jpeg';
+  static String pay = 'assets/images/pay.png';
+  static String mobile = 'assets/images/mobile.png';
+  static String dth = 'assets/images/dth.png';
+  static String lock = 'assets/images/lock.png';
+  static String delivery = 'assets/images/delivery.png';
+  static String yellow = 'assets/images/R.jpeg';
+  static String blackAmazonePay = 'assets/images/Amazon_Pay_Logo.png';
+
 //category logos
   static String prime_day_logo = 'assets/images/primeday.jpeg';
   static String minitv_Logo = 'assets/images/minitv.jpg';
@@ -89,4 +98,51 @@ class Constants {
       'assets/images/IN-SBC-TILES_PERSONAL-HEALTH.jpg';
   static String categoryimg17 = 'assets/images/IN-SBC-TILES_Travel.jpg';
   static String categoryimg18 = 'assets/images/IN-SBC-TILES_PHARMACY.jpg';
+
+  static String travel = 'assets/icons/travel.png';
+  static String train = 'assets/icons/train.png';
+  static String rewards = 'assets/icons/rewards.png';
+  static String retaurent = 'assets/icons/restaurent.png';
+  static String pvr = 'assets/icons/pvr.png';
+  static String postpaid = 'assets/icons/postpaid.png';
+  static String giftcard3 = 'assets/icons/giftcard3.png';
+  static String playstore = 'assets/icons/playstore.png';
+  static String gass = 'assets/icons/gass.png';
+  static String paybill = 'assets/icons/paybill.png';
+  static String flight = 'assets/icons/flight.png';
+  static String movies = 'assets/icons/movies.png';
+  static String fasttag2 = 'assets/icons/fasttag2.png';
+  static String movie2 = 'assets/icons/movie2.png';
+  static String fasttag = 'assets/icons/fasttag.png';
+  static String mobileRecharge2 = 'assets/icons/mobileRecharge2.png';
+  static String fasion = 'assets/icons/fashion.png';
+  static String mobileRecharge = 'assets/icons/mobileRecharge.png';
+  static String explore = 'assets/icons/explore.png';
+  static String metro1 = 'assets/icons/metro1.png';
+  static String electronics = 'assets/icons/electronics.png';
+  static String metro2 = 'assets/icons/metro2.png';
+  static String electricity = 'assets/icons/electricity.png';
+  static String metro = 'assets/icons/metro.png';
+  static String crwn = 'assets/icons/crwn.png';
+  static String kyc = 'assets/icons/kyc.png';
+  static String credit = 'assets/icons/credit.png';
+  static String investment = 'assets/icons/investment.png';
+  static String creditstore = 'assets/icons/creditstore.png';
+  static String investment1 = 'assets/icons/investment1.png';
+  static String cinepolic = 'assets/icons/cinepolic.png';
+  static String investment2 = 'assets/icons/investment2.png';
+  static String car = 'assets/icons/car.png';
+  static String investment3 = 'assets/icons/investment3.png';
+  static String bus = 'assets/icons/bus.png';
+  static String insurance = 'assets/icons/insurance.png';
+  static String bike = 'assets/icons/bike.png';
+  static String insurence = 'assets/icons/insurence.png';
+  static String appstore = 'assets/icons/appstore.png';
+  static String inox = 'assets/icons/inox.png';
+  static String account = 'assets/icons/account.png';
+  static String hotel = 'assets/icons/hotel.png';
+  static String giftcard = 'assets/icons/giftcard.png';
+  static String giftcard1 = 'assets/icons/giftcard1.png';
+  static String giftcard2 = 'assets/icons/giftcard2.png';
+  static String reward = 'assets/icons/reward.png';
 }

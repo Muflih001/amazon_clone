@@ -1,3 +1,4 @@
+import 'package:amazon_clone/view/cartScreen/cartScreen.dart';
 import 'package:amazon_clone/view/homeScreen/homeScreen.dart';
 import 'package:amazon_clone/view/menuScreen/menuScreen.dart';
 import 'package:amazon_clone/view/moreScreen/moreScreen.dart';
@@ -9,28 +10,21 @@ class NavBarScreen extends StatefulWidget {
   State<NavBarScreen> createState() => _NavBarScreenState();
 }
 
-class _NavBarScreenState extends State<NavBarScreen> {
+class _NavBarScreenState extends State<NavBarScreen>
+    with TickerProviderStateMixin {
   var selectedIndex = 0;
   List<Widget> myScreens = [
     Homescreen(),
     Usernamescreen(),
     Homescreen(),
-    Container(
-      color: Colors.yellow,
-    ),
+    Cartscreen(),
     MenuScreen(),
   ];
-  bool _showMoreContainer = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          myScreens[selectedIndex],
-          _showMoreContainer ? Morescreen() : Container(),
-        ],
-      ),
+      body: myScreens[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         backgroundColor: Colors.white,
@@ -50,9 +44,17 @@ class _NavBarScreenState extends State<NavBarScreen> {
           BottomNavigationBarItem(
               icon: InkWell(
                   onTap: () {
-                    setState(() {
-                      _showMoreContainer = !_showMoreContainer;
-                    });
+                    showModalBottomSheet(
+                        backgroundColor: Colors.transparent,
+                        context: context,
+                        isScrollControlled: true,
+                        // Make the barrier transparent
+                        transitionAnimationController: AnimationController(
+                          duration: const Duration(
+                              milliseconds: 300), // Set the animation duration
+                          vsync: this,
+                        ),
+                        builder: (context) => Morescreen());
                   },
                   child: Icon(Icons.video_collection_outlined)),
               label: 'More'),

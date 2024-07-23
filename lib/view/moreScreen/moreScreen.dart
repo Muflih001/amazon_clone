@@ -7,7 +7,7 @@ class Morescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 405.0),
+      padding: const EdgeInsets.only(bottom: 58.0),
       child: Container(
           height: 381,
           width: double.infinity,
@@ -21,8 +21,15 @@ class Morescreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 30,
+              Padding(
+                padding: const EdgeInsets.only(top: 15.0, bottom: 10),
+                child: Container(
+                  height: 5,
+                  width: 80,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[350],
+                      borderRadius: BorderRadius.circular(2)),
+                ),
               ),
               Text(
                 'Do more with Amazon',
