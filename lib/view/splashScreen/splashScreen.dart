@@ -1,5 +1,8 @@
 import 'package:amazon_clone/utils/constants/constants.dart';
 import 'package:amazon_clone/view/homeScreen/homeScreen.dart';
+import 'package:amazon_clone/view/languageselection/LanguageSelectionScreen.dart';
+import 'package:amazon_clone/view/loginScreen/loginScreen.dart';
+import 'package:amazon_clone/view/loginScreen/loginScreen1.dart';
 import 'package:amazon_clone/view/navBarScreen/navBarScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => NavBarScreen(),
+              builder: (context) => Languageselectionscreen(),
             ));
       },
     );
@@ -34,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
         width: 180,
         decoration: BoxDecoration(
             image: DecorationImage(image: AssetImage(Constants.Splash_Logo)),
-            borderRadius: BorderRadius.circular(35)),
+            borderRadius: BorderRadius.circular(40)),
       )),
     );
   }

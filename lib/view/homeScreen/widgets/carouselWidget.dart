@@ -115,7 +115,7 @@ class _CarouselwidgetState extends State<Carouselwidget> {
         reverse: false,
         autoPlay: true,
         autoPlayInterval: Duration(seconds: 5),
-        autoPlayAnimationDuration: Duration(milliseconds: 000),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
         animateToClosest: true,
         pauseAutoPlayOnTouch: true,
         enlargeCenterPage: true,

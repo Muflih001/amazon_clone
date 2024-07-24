@@ -1,3 +1,4 @@
+import 'package:amazon_clone/utils/constants/constants.dart';
 import 'package:amazon_clone/view/cartScreen/cartScreen.dart';
 import 'package:amazon_clone/view/homeScreen/homeScreen.dart';
 import 'package:amazon_clone/view/menuScreen/menuScreen.dart';
@@ -29,6 +30,7 @@ class _NavBarScreenState extends State<NavBarScreen>
         currentIndex: selectedIndex,
         backgroundColor: Colors.white,
         selectedItemColor: Colors.blue,
+        unselectedLabelStyle: TextStyle(color: Colors.grey),
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
         unselectedItemColor: Colors.black,
         type: BottomNavigationBarType.fixed,
@@ -56,7 +58,12 @@ class _NavBarScreenState extends State<NavBarScreen>
                         ),
                         builder: (context) => Morescreen());
                   },
-                  child: Icon(Icons.video_collection_outlined)),
+                  child: Container(
+                    padding: EdgeInsets.only(top: 3),
+                    height: 27,
+                    width: 22,
+                    child: Image.asset(Constants.moreicon),
+                  )),
               label: 'More'),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart_outlined), label: 'Cart'),

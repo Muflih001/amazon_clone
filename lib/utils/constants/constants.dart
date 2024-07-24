@@ -8,6 +8,7 @@ class Constants {
   static String travelTicket_Logo = 'assets/images/travel_ticket.jpg';
   static String spinGame_Logo = 'assets/images/spinGame.jpeg';
   static String Amazon_Logo = 'assets/images/Amazonlogo.png';
+  static String Black_Amazon_Logo = 'assets/images/black amazon logo.webp';
   static String flag = 'assets/images/flag.jpeg';
   static String pay = 'assets/images/pay.png';
   static String mobile = 'assets/images/mobile.png';
@@ -16,7 +17,7 @@ class Constants {
   static String delivery = 'assets/images/delivery.png';
   static String yellow = 'assets/images/R.jpeg';
   static String blackAmazonePay = 'assets/images/Amazon_Pay_Logo.png';
-
+  static String moreicon = 'assets/images/moreicon.jpg';
 //category logos
   static String prime_day_logo = 'assets/images/primeday.jpeg';
   static String minitv_Logo = 'assets/images/minitv.jpg';

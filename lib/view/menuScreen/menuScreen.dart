@@ -16,33 +16,57 @@ class _MenuScreenState extends State<MenuScreen> {
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 20, 255, 235),
         title: Padding(
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: const EdgeInsets.only(bottom: 10, top: 5),
           child: Container(
-            width: 350,
-            height: 45,
+            height: 50,
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-                border: Border.all(color: Colors.grey)),
-            child: TextFormField(
-              decoration: InputDecoration(
-                suffixIcon: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.qr_code_scanner_outlined),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.mic_none_outlined),
-                    SizedBox(
-                      width: 5,
-                    ),
-                  ],
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                // Add this
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 2,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
                 ),
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(borderSide: BorderSide.none),
-                hintText: 'Search Amazon.in',
-              ),
+              ],
+              color: Colors.white,
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide:
+                        BorderSide(color: Colors.grey), // default grey border
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide:
+                        BorderSide(color: Colors.grey), // default grey border
+                  ),
+                  hintText: 'Search Amazon Pay',
+                  suffixIcon: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.qr_code_scanner_outlined, color: Colors.grey),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        Icons.mic_none_outlined,
+                        color: Colors.grey,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                    ],
+                  ),
+                  prefixIcon: Icon(Icons.search),
+                  focusColor: Colors.grey),
             ),
           ),
         ),
