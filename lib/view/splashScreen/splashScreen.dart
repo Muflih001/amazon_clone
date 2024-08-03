@@ -1,9 +1,6 @@
 import 'package:amazon_clone/utils/constants/constants.dart';
-import 'package:amazon_clone/view/homeScreen/homeScreen.dart';
 import 'package:amazon_clone/view/languageselection/LanguageSelectionScreen.dart';
-import 'package:amazon_clone/view/loginScreen/loginScreen.dart';
-import 'package:amazon_clone/view/loginScreen/loginScreen1.dart';
-import 'package:amazon_clone/view/navBarScreen/navBarScreen.dart';
+
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

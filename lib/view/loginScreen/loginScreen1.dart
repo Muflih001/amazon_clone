@@ -117,10 +117,11 @@ class _Loginscreen1State extends State<Loginscreen1> {
                   setState(() {
                     _selectedIndex = 2;
                   });
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => SkipSignInScreen()),
-                  );
+                  Navigator.pushAndRemoveUntil(
+  context,
+  MaterialPageRoute(builder: (context) => SkipSignInScreen()),
+  (Route<dynamic> route) => false, // remove all routes
+);
                 },
                 child: Container(
                   height: 50,
@@ -134,9 +135,6 @@ class _Loginscreen1State extends State<Loginscreen1> {
                   child: Center(child: Text('Skip sign in')),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 30,
             )
           ],
         ),
